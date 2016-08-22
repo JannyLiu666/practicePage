@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;  font-family:'微软雅黑'; font-size:12px;}
+a{ text-decoration:none; color:#000; font-family:'微软雅黑'; font-size:12px;}
+ img{ border:none 0;}
+
+/*顶部*/
+.header{ width:1250px; margin:auto 0; overflow:hidden;}
+.header div{ margin-left:490px; text-align:center;}
+.header dd,.header dt{ float:left; color:#000; font-family:'微软雅黑'; font-size:12px; }
+.header dd{ margin-top:10px;}
+
+.header .logo{ margin-left:150px; margin-top:-25px;}
+.header .person{ margin-left:869px; margin-top:-65px; float:left;}
+.search { width:323px; height:31px; border:solid 1px #9a7c66; float:left; margin-top:-65px;}
+.search img{ float:right;}
+.search input{ height:29px; border:none 0;}
+
+.search dd{float:left; color:#000; font-family:'微软雅黑'; font-size:12px; }
+/*导航条*/
+.nav{ margin:0 auto; width:1250px; background-image:url(images/bac_02.gif); background-repeat:repeat-x; height:40px; overflow:hidden;}
+.nav dd,.nav dt{ float:left; line-height:40px; margin-right:54px; color:#FFF;}
+.nav a{ color:#FFF;}
+.nav h1{ background-color:#ffcd00; height:38px; margin-left:194px; width:194px; text-align:center; color:#FFF;}
+/*展示*/
+.show{ margin:0 auto; width:1250px;}
+.show .left{ width:133px;  float:left;  height:480px;}
+.product{ width:194px; background-color:#e3dad5; float:left;}
+.product .list{ border-bottom:solid 2px #CCC;  float:left; height:93px;}
+.list h1{ text-align:center;}
+.list a{color:#666; text-align:center; margin-left:15px; line-height:25px;}
+.photo{overflow:hidden; position:relative;}
+.photo .rightB{ position:absolute; left:350px;; top:0;}
+.photo .leftA{ position:absolute; left:-200px;; top:0;}
+.photo .imgnum img{ float:left; width:790px; height:405px; display:block;}
+.photo .floatphoto{ position:absolute; left:900px; top:400px; width:256px; height:156px;}
+
+.navtwo{ background-color:#d3d3d3; float:left; width:790px; height:25px;}
+.navtwo a{ float:left; line-height:25px; margin-left:55px;}
+
+.buttomimg img{ width:260px; height:140px;}
+.show .right{ float:right; width:123px; height:480px;}
+.footer{ width:1250px; margin:auto 0;}
+
+/*自定义类*/
+.graybox{ background-color:#999; color:#FFF;}

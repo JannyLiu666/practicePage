@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(function(){
+		/*图片都不显示，只显示第一张*/
+		var n=0;
+		$(".imgnum img").hide();
+		$(".imgnum img").eq(0).fadeIn();
+		/*点击向左箭头，图片换一张,遍历完一遍继续点回到第一张*/
+		$(".leftA").click(function(){
+			if(n<3){
+				n=n+1;
+				
+				}else{
+					n=0;
+				
+					}
+			document.title=n;
+			
+			$(".imgnum img").hide();
+			$(".imgnum img").eq(n).fadeIn();
+			})
+			/*点击向右箭头，图片换一张,遍历完一遍继续点回到第一张*/
+			$(".rightB").click(function(){
+			if(n>0){
+				n=n-1;
+				
+				}else{
+					n=3;
+					$(this).hide();
+					}
+			document.title=n;
+			$(".imgnum img").hide();
+			$(".imgnum img").eq(n).fadeIn();
+			})
+		})
+		/*鼠标经过标题变化*/
+		$(function(){
+			$("a").hover(function(){
+				$(this).addClass("graybox");
+				},function(){
+					
+				$(this).removeClass("graybox");
+			
+			})
+		
+ 
+		/*$(function(){
+			
+		$("a").mouseover(function(){
+		$(this).addClass("graybox");
+		}).mouseout(function(){
+			$(this).removeClass("graybox");
+			})
+			})*/	
+		})
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>乐蜂网</title>
+</head>
+
+<body>
+
+<div class="header">
+	<div>
+    	<dl>
+        	<dd>欢迎来到乐峰！&nbsp;&nbsp;请&nbsp;&nbsp;</dd>
+            <dd><a href="">登录&nbsp;&nbsp;</a></dd>
+            <dd><a href="">注册&nbsp;&nbsp;</a></dd>
+             <dd><a href="">我的峰巢</a></dd>
+            <dt><a href=""><img src="images/car_02.gif" /></a></dt>
+            <dt><a href=""><img src="images/see_02.gif" /></a></dt>
+            <dt><a href=""><img src="images/shoucang_02.gif"/></a></dt>
+        </dl>
+    </div>
+    <img class="logo" src="images/logo_03.gif"/>
+    <img class="person" src="images/person.png" />
+    <div class="search">
+    	<input type="text"/><img src="images/search_03.gif" />
+      
+        <dl>
+        	<dd>热门:&nbsp;&nbsp;</dd>
+            <dd><a href="">润肤乳&nbsp;&nbsp;</a></dd>
+            <dd><a href="">韩伊&nbsp;&nbsp;</a></dd>
+            <dd><a href="">独家限量&nbsp;&nbsp;</a></dd>
+            <dd><a href="">丝塔芙&nbsp;&nbsp;</a></dd>
+       </dl>
+       
+    </div>
+</div>
+
+<div class="nav">
+	<dl>
+        	<dt><h1>所有商品&nbsp;&nbsp;</h1></dt>
+            <dd><a href="">首页&nbsp;&nbsp;</a></dd>
+            <dd><a href="">团购&nbsp;&nbsp;</a></dd>
+            <dd><a href="">促销&nbsp;&nbsp;</a></dd>
+            <dd><a href="">品牌街&nbsp;&nbsp;</a></dd>
+            <dd><a href="">达人&nbsp;&nbsp;</a></dd>
+            <dd><a href="">试客</a></dd>
+            <dd><a href="">口碑</a></dd>
+            <dd><a href="">蜂向标</a></dd>
+       </dl>
+</div>
+<div class="show">
+<img class="left" src="images/newyear_03.gif" />
+<img class="right" src="images/right_06.gif" />
+<div class="product">
+ 	<div class="list">
+   		 	<h1>护肤&nbsp; &nbsp;彩妆&nbsp; &nbsp; 精油</h1>
+            <a href="">面膜&nbsp;&nbsp;</a>
+            <a href="">卸妆&nbsp;&nbsp;</a>
+            <a href="">洁面&nbsp;&nbsp;</a><br>
+            <a href="">眼霜&nbsp;&nbsp;</a>
+            <a href="">面霜&nbsp;&nbsp;</a>
+            <a href="">精华</a>
+            
+	  </div>
+	
+   		<div class="list">
+   		 	<h1>护肤&nbsp; &nbsp;彩妆&nbsp; &nbsp; 精油</h1>
+            <a href="">面膜&nbsp;&nbsp;</a>
+            <a href="">卸妆&nbsp;&nbsp;</a>
+            <a href="">洁面&nbsp;&nbsp;</a><br>
+            <a href="">眼霜&nbsp;&nbsp;</a>
+            <a href="">面霜&nbsp;&nbsp;</a>
+            <a href="">精华</a>
+            
+	  </div>
+	
+       <div class="list">
+   		 	<h1>护肤&nbsp; &nbsp;彩妆&nbsp; &nbsp; 精油</h1>
+            <a href="">面膜&nbsp;&nbsp;</a>
+            <a href="">卸妆&nbsp;&nbsp;</a>
+            <a href="">洁面&nbsp;&nbsp;</a><br>
+            <a href="">眼霜&nbsp;&nbsp;</a>
+            <a href="">面霜&nbsp;&nbsp;</a>
+            <a href="">精华</a>
+            
+	    </div>
+    <div class="list">
+   		 	<h1>护肤&nbsp; &nbsp;彩妆&nbsp; &nbsp; 精油</h1>
+            <a href="">面膜&nbsp;&nbsp;</a>
+            <a href="">卸妆&nbsp;&nbsp;</a>
+            <a href="">洁面&nbsp;&nbsp;</a><br>
+            <a href="">眼霜&nbsp;&nbsp;</a>
+            <a href="">面霜&nbsp;&nbsp;</a>
+            <a href="">精华</a>
+            
+	  </div>
+ 	  <div class="list">
+   		 	<h1>护肤&nbsp; &nbsp;彩妆&nbsp; &nbsp; 精油</h1>
+            <a href="">面膜&nbsp;&nbsp;</a>
+            <a href="">卸妆&nbsp;&nbsp;</a>
+            <a href="">洁面&nbsp;&nbsp;</a><br>
+            <a href="">眼霜&nbsp;&nbsp;</a>
+            <a href="">面霜&nbsp;&nbsp;</a>
+            <a href="">精华</a>
+            
+	  </div>
+      <div class="list">
+   		 	<h1>护肤&nbsp; &nbsp;彩妆&nbsp; &nbsp; 精油</h1>
+            <a href="">面膜&nbsp;&nbsp;</a>
+            <a href="">卸妆&nbsp;&nbsp;</a>
+            <a href="">洁面&nbsp;&nbsp;</a><br>
+            <a href="">眼霜&nbsp;&nbsp;</a>
+            <a href="">面霜&nbsp;&nbsp;</a>
+            <a href="">精华</a>
+            
+	  </div>
+      
+      </div>
+	<div class="photo">
+    		<div class="imgnum">
+    	  <img class="photocontain" src="images/banner01.jpg"/>
+          <img class="" src="images/banner02.jpg"/>
+          <img src="images/banner04.jpg"/>
+          <img src="images/banner03.jpg" />
+          	</div>
+          <img class="rightB" src="images/icon1.png"/>
+           <img class="leftA" src="images/icon2.png"/>
+          <img class="floatphoto" src="images/shower_03.gif" />
+          		<div class="navtwo">
+					<a href="">活动&nbsp;&nbsp;</a>
+           			<a href="">潮牌&nbsp;&nbsp;</a>
+           			<a href="">独享&nbsp;&nbsp;</a>
+           			<a href="">尝鲜&nbsp;&nbsp;</a>
+            		<a href="">专栏&nbsp;&nbsp;</a>
+                    <a href="">独享&nbsp;&nbsp;</a>
+           			<a href="">尝鲜&nbsp;&nbsp;</a>
+            		<a href="">专栏&nbsp;&nbsp;</a>
+           			
+				</div>
+                <div class="buttomimg">
+          			 <img src="images/smallBanner01.jpg" />
+           			<img src="images/smallBanner02.jpg" />
+           			<img src="images/smallBanner03.jpg" />
+                </div>
+    </div>
+	
+</div>
+
+<div class="footer">
+	<marquee>乐峰声明，对瑕疵零容忍，品质合格有保障&nbsp;&nbsp;&nbsp;&nbsp;  诈骗重要提示，提高自我保护意识，避免上当<marquee>
+
+</div>
+
+
+</body>
+</html>
